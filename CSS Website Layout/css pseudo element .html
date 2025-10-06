@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-element Example</title>
+    <style>
+        /* ::before and ::after */
+        h1::before {
+            content: " ⭐";
+            color: gold;
+        }
+
+        h1::after {
+            content: " ⭐";
+            color: gold;
+        }
+
+        /* ::first-letter */
+        p::first-letter {
+            font-size: 2rem;
+            font-weight: bold;
+            color: darkred;
+        }
+
+        /* ::first-line */
+        p::first-line {
+            color: blue;
+            text-transform: uppercase;
+        }
+
+        /* ::selection */
+        p::selection {
+            background: yellow;
+            color: black;
+        }
+
+        /* ::marker */
+        li::marker {
+            color: green;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo-element Example</h1>
+
+    <p>
+        This paragraph demonstrates pseudo-elements. The first letter is styled differently,
+        the first line has special formatting, and if you select the text you will see a custom highlight color.
+    </p>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+</body>
+
+</html>
